@@ -1,14 +1,20 @@
 new Vue({
   el: "#vue-app",
   data: {
-    name: "Aleksandar",
-    characters: ["Mario", "Luigi", "Batman", "Superman"],
-    ninjas: [
-      { name: "Ryi", age: 25 },
-      { name: "Yoshi", age: 26 },
-      { name: "ken", age: 31 }
-    ]
+    health: 100,
+    ended: false
   },
-  methods: {},
+  methods: {
+    punch: function() {
+      this.health -= 10;
+      if (this.health <= 0) {
+        this.ended = true;
+      }
+    },
+    restart: function() {
+      this.health = 100;
+      this.ended = false;
+    }
+  },
   computed: {}
 });
