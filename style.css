@@ -1,6 +1,20 @@
-#canvas {
-  width: 600px;
-  padding: 200px 20px;
-  text-align: center;
-  border: 1px solid purple;
+span {
+  background: paleturquoise;
+  display: inline-block;
+  padding: 20px;
+  color: darkblue;
+  margin: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px darkmagenta dashed;
+  border-radius: 10%;
+}
+
+.available span {
+  background: greenyellow;
+}
+
+.nearby span::after {
+  content: "nearby";
+  margin-left: 10px;
 }
