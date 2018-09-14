@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VueJS</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
     <div id="vue-app">
-        <h1>{{ greet('night') }}</h1>
-        <h4>Name: {{ name }}</h4>
-        <h4>Job: {{ job }}</h4>
-        <h4>Description: {{ description }}</h4>
+        <h1>Data Binding</h1>
+        <p>Name: {{ name }}</p>
+        <a v-bind:href="website" target="_blank">Aleksandar Ljubišić</a>
+        <br><br><input type="text" v-bind:value="job"><br>
+        <p v-html="websiteTag"></p>
     </div>
 
     <script src="app.js"></script>
