@@ -13,11 +13,13 @@
 
 <body>
     <div id="vue-app">
-        <h1>Keyboard Events</h1>
+        <h1>Two-way Data Binding</h1>
         <label>Name:</label>
-        <input type="text" v-on:keyup.enter="logName">
+        <input type="text" v-model="name">
+        <span>{{ name }}</span><br><br>
         <label>Age:</label>
-        <input type="text" v-on:keyup.alt.enter="logAge">
+        <input type="text" v-model="age">
+        <span>{{ age }}</span>
     </div>
     <!--https://vuejs.org/v2/guide/events.html#Key-Modifiers-->
     <script src="app.js"></script>
