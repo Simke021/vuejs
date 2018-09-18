@@ -15,17 +15,15 @@
     <h1>Multiple Vue Instances</h1>
     <hr>
     <div id="vue-app-one">
-        <h2>This is from: {{ title }}</h2>
-        <p>{{ greet }}</p>
+        <h2>Vue app one</h2>
+        <greeting></greeting>
     </div>
     <hr>
     <div id="vue-app-two">
-        <h2>This is from: {{ title }}</h2>
-        <p>{{ greet }}</p>
-        <button v-on:click="changeTitle">Change App One Title</button>
+        <h2>Vue app two</h2>
+        <greeting></greeting>
     </div>
-    <br>
-    <hr>
+
     <script src="app.js"></script>
 </body>
 
