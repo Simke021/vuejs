@@ -12,16 +12,19 @@
 </head>
 
 <body>
-    <h1>Multiple Vue Instances</h1>
-    <hr>
-    <div id="vue-app-one">
-        <h2>Vue app one</h2>
-        <greeting></greeting>
-    </div>
-    <hr>
-    <div id="vue-app-two">
-        <h2>Vue app two</h2>
-        <greeting></greeting>
+    <div id="vue-app">
+        <h1>Refs</h1>
+        <input type="text" ref="input">
+        <button v-on:click="readRefs">Submit</button>
+        <hr>
+        <p>Your favorite food: {{ output }}</p>
+
+        <br>
+        <hr>
+
+        <div ref="test">
+            Hello
+        </div>
     </div>
 
     <script src="app.js"></script>
